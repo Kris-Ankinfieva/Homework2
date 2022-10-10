@@ -1,2 +1,18 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿// Напишите программу, которая принимает на вход цифру, 
+// обозначающую день недели, и проверяет, является ли этот день вx
+
+// 6 -> да
+// 7 -> да
+// 1 -> нет
+
+Console.WriteLine ("Введите число: ");
+int day = Convert.ToInt32(Console.ReadLine());
+String [] days = {"Пн - не выходной день", "Вт - не выходной день", "Ср - не выходной день", "Чт - не выходной день", "Пт - не выходной день", "Сб - выходной день","Вс - выходной день"};
+if(day < 1||day > 7)
+{
+    Console.WriteLine("Такого дня недели не существует");
+}
+else
+{
+    Console.WriteLine(days [day -1]);
+}
